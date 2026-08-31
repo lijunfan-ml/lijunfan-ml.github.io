@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Personal Homepage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 48px 24px;
+            color: #24292f;
+            background-color: #ffffff;
+            line-height: 1.65;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            background-color: #e5e7eb;
+        }
+        .name-title h1 {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+        .name-title p {
+            color: #57606a;
+            font-size: 17px;
+        }
+        section {
+            margin-bottom: 36px;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom:14px;
+            padding-bottom:6px;
+            border-bottom: 1px solid #eaecef;
+        }
+        ul {
+            padding-left:22px;
+        }
+        li {
+            margin-bottom:8px;
+        }
+        a {
+            color:#0969da;
+            text-decoration:none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .links-row {
+            display:flex;
+            gap:18px;
+            flex-wrap:wrap;
+        }
+        .project-item {
+            padding:12px 16px;
+            border:1px solid #eaecef;
+            border-radius:8px;
+            margin-bottom:12px;
+        }
+        .project-item h3 {
+            font-size:17px;
+            margin-bottom:4px;
+        }
+        .project-item p {
+            font-size:14px;
+            color:#57606a;
+        }
+        footer {
+            margin-top:60px;
+            padding-top:20px;
+            border-top:1px solid #eaecef;
+            font-size:14px;
+            color:#656d76;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="avatar"></div>
+        <div class="name-title">
+            <h1>Your Full Name</h1>
+            <p>Researcher / Machine Learning Engineer</p>
+        </div>
+    </div>
+
+    <section>
+        <h2>About</h2>
+        <p>
+            Focus on machine learning theory, large‑model efficiency optimization, deep learning.
+            My research interests include transformer architecture, kernel methods, high‑dimensional probability, generalization theory.
+        </p>
+    </section>
+
+    <section>
+        <h2>Research Interests</h2>
+        <ul>
+            <li>Efficient LLM inference & attention mechanism optimization</li>
+            <li>Theory of deep learning, kernel methods & generalization bounds</li>
+            <li>High‑dimensional probability & concentration inequalities</li>
+            <li>Neural network architecture design</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+        <div class="project-item">
+            <h3><a href="#">project‑name‑1</a></h3>
+            <p>Brief description for this project.</p>
+        </div>
+        <div class="project-item">
+            <h3><a href="#">project‑name‑2</a></h3>
+            <p>Brief description for this project.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Publications</h2>
+        <ul>
+            <li>Paper Title. Conference/Journal, Year. <a href="[pdf link]">[pdf]</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Contact</h2>
+        <div class="links-row">
+            <a href="https://github.com/your-github-id">GitHub</a>
+            <a href="mailto:xxx@example.com">Email</a>
+            <a href="#">Google Scholar</a>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 Your Name | Powered by GitHub Pages
+    </footer>
+</body>
+</html>
