@@ -26,10 +26,15 @@
             margin-bottom: 42px;
             flex-wrap: wrap;
         }
+        /*
+        原圆形头像：直径130px → 面积 π*65² ≈13273
+        长方形：183px × 145px，面积≈26535，约等于原来2倍
+        border-radius 调0为直角；调12px为柔和圆角矩形
+        */
         .avatar {
-            width: 130px;
-            height: 130px;
-            border-radius: 50%;
+            width: 183px;
+            height: 145px;
+            border-radius: 12px;
             object-fit: cover;
             border: 2px solid #e5e7eb;
         }
@@ -95,11 +100,10 @@
 </head>
 <body>
     <div class="header">
-        <!-- 头像部分 -->
-        <!-- 方案A：图片上传到仓库根目录，图片命名 avatar.jpg，使用下面这行 -->
+        <!-- 头像：上传 avatar.jpg 到仓库根目录 -->
         <img class="avatar" src="./avatar.jpg" alt="profile photo">
         <!--
-        方案B：使用在线图片链接，注释上面一行，打开下面一行，填入图片url
+        在线图片链接版本：
         <img class="avatar" src="https://xxx/photo.jpg" alt="profile photo">
         -->
         <div class="name-title">
