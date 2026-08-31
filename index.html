@@ -12,7 +12,7 @@
         }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            max-width: 900px;
+            max-width: 920px;
             margin: 0 auto;
             padding: 48px 24px;
             color: #24292f;
@@ -22,19 +22,19 @@
         .header {
             display: flex;
             align-items: center;
-            gap: 24px;
-            margin-bottom: 40px;
+            gap: 28px;
+            margin-bottom: 42px;
             flex-wrap: wrap;
         }
         .avatar {
-            width: 120px;
-            height: 120px;
+            width: 130px;
+            height: 130px;
             border-radius: 50%;
             object-fit: cover;
-            background-color: #e5e7eb;
+            border: 2px solid #e5e7eb;
         }
         .name-title h1 {
-            font-size: 32px;
+            font-size: 34px;
             font-weight: 600;
             margin-bottom: 6px;
         }
@@ -43,20 +43,20 @@
             font-size: 17px;
         }
         section {
-            margin-bottom: 36px;
+            margin-bottom: 38px;
         }
         h2 {
-            font-size: 20px;
+            font-size: 21px;
             font-weight: 600;
             margin-bottom:14px;
             padding-bottom:6px;
             border-bottom: 1px solid #eaecef;
         }
         ul {
-            padding-left:22px;
+            padding-left:24px;
         }
         li {
-            margin-bottom:8px;
+            margin-bottom:9px;
         }
         a {
             color:#0969da;
@@ -67,26 +67,26 @@
         }
         .links-row {
             display:flex;
-            gap:18px;
+            gap:20px;
             flex-wrap:wrap;
         }
         .project-item {
-            padding:12px 16px;
+            padding:14px 18px;
             border:1px solid #eaecef;
             border-radius:8px;
-            margin-bottom:12px;
+            margin-bottom:14px;
         }
         .project-item h3 {
-            font-size:17px;
-            margin-bottom:4px;
+            font-size:18px;
+            margin-bottom:5px;
         }
         .project-item p {
-            font-size:14px;
+            font-size:14.5px;
             color:#57606a;
         }
         footer {
-            margin-top:60px;
-            padding-top:20px;
+            margin-top:64px;
+            padding-top:22px;
             border-top:1px solid #eaecef;
             font-size:14px;
             color:#656d76;
@@ -95,55 +95,60 @@
 </head>
 <body>
     <div class="header">
-        <div class="avatar"></div>
+        <!-- 头像部分 -->
+        <!-- 方案A：图片上传到仓库根目录，图片命名 avatar.jpg，使用下面这行 -->
+        <img class="avatar" src="./avatar.jpg" alt="profile photo">
+        <!--
+        方案B：使用在线图片链接，注释上面一行，打开下面一行，填入图片url
+        <img class="avatar" src="https://xxx/photo.jpg" alt="profile photo">
+        -->
         <div class="name-title">
             <h1>Your Full Name</h1>
-            <p>Researcher / Machine Learning Engineer</p>
+            <p>Researcher | Machine Learning</p>
         </div>
     </div>
 
     <section>
         <h2>About</h2>
         <p>
-            Focus on machine learning theory, large‑model efficiency optimization, deep learning.
-            My research interests include transformer architecture, kernel methods, high‑dimensional probability, generalization theory.
+            My research focuses on machine‑learning theory, efficient large‑model inference, attention‑mechanism optimization, kernel methods and high‑dimensional probability.
         </p>
     </section>
 
     <section>
         <h2>Research Interests</h2>
         <ul>
-            <li>Efficient LLM inference & attention mechanism optimization</li>
-            <li>Theory of deep learning, kernel methods & generalization bounds</li>
-            <li>High‑dimensional probability & concentration inequalities</li>
-            <li>Neural network architecture design</li>
+            <li>Efficient LLM inference & attention optimization</li>
+            <li>Deep‑learning theory, generalization bounds</li>
+            <li>Kernel methods & high‑dimensional probability</li>
+            <li>Neural‑network architecture</li>
         </ul>
     </section>
 
     <section>
-        <h2>Projects</h2>
+        <h2>Selected Projects</h2>
         <div class="project-item">
-            <h3><a href="#">project‑name‑1</a></h3>
-            <p>Brief description for this project.</p>
+            <h3><a href="#">project‑1</a></h3>
+            <p>Project description.</p>
         </div>
         <div class="project-item">
-            <h3><a href="#">project‑name‑2</a></h3>
-            <p>Brief description for this project.</p>
+            <h3><a href="#">project‑2</a></h3>
+            <p>Project description.</p>
         </div>
     </section>
 
     <section>
         <h2>Publications</h2>
         <ul>
-            <li>Paper Title. Conference/Journal, Year. <a href="[pdf link]">[pdf]</a></li>
+            <li>Paper Title. Conference, Year. <a href="#">[PDF]</a></li>
         </ul>
     </section>
 
     <section>
         <h2>Contact</h2>
         <div class="links-row">
-            <a href="https://github.com/your-github-id">GitHub</a>
-            <a href="mailto:xxx@example.com">Email</a>
+            <a href="https://github.com/your_id">GitHub</a>
+            <a href="mailto:xxx@email.com">Email</a>
             <a href="#">Google Scholar</a>
         </div>
     </section>
