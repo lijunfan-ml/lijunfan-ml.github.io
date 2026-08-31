@@ -27,12 +27,13 @@
             flex-wrap: wrap;
         }
         /*
-        宽高比 1:2，宽115px，高230px，面积≈26450，约等于原圆形2倍
-        border‑radius:12px 柔和圆角矩形；改为0得到直角
+        原圆形头像：直径130px → 面积 π*65² ≈13273
+        长方形：183px × 145px，面积≈26535，约等于原来2倍
+        border-radius 调0为直角；调12px为柔和圆角矩形
         */
         .avatar {
-            width: 115px;
-            height: 230px;
+            width: 183px;
+            height: 145px;
             border-radius: 12px;
             object-fit: cover;
             border: 2px solid #e5e7eb;
@@ -106,8 +107,9 @@
         <img class="avatar" src="https://xxx/photo.jpg" alt="profile photo">
         -->
         <div class="name-title">
-            <h1>Your Full Name</h1>
-            <p>Researcher | Machine Learning</p>
+            <h1>Junfan Li</h1>
+            <p>Tenure-track Assistant Professor | Machine Learning</p>
+            <p>Shanghai University of Finance and Economics (SUFE)|School of Computing and Artificial Intelligence</p>
         </div>
     </div>
 
